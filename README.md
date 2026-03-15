@@ -49,6 +49,10 @@ this is a minimal implementation of the rag model for question answering.
    ```
    uvicorn main:app --reload --host 0.0.0.0 --port 5000
    ```
-   ## Donwload postman collection
+   ## Donwload postman collectionnch -m
 
    Download from postman collections [\assets\mini-rag-app.postman_collection.json](\assets\mini-rag-app.postman_collection.json)
+
+   ## Create a routes Folder contains all Project routes
+
+   - create a base.py which contains the base routes for the project.
