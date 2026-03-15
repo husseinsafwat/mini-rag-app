@@ -43,3 +43,12 @@ this is a minimal implementation of the rag model for question answering.
    cp .env.example .env
    ```
    Set your environment variable in the .env file like OPENAI_API_KEY value.
+
+   ## Run the FastAPI server
+
+   ```
+   uvicorn main:app --reload --host 0.0.0.0 --port 5000
+   ```
+   ## Donwload postman collection
+
+   Download from postman collections [\assets\mini-rag-app.postman_collection.json](\assets\mini-rag-app.postman_collection.json)
