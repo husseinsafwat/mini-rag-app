@@ -30,7 +30,7 @@ async def upload_file(project_id : str , uploaded_file : UploadFile ,
     
     project_controller = ProjectController()
     project_dir = project_controller.get_project_dir(project_id = project_id)
-    file_path = DataController().generate_filename(project_id=project_id , filename=uploaded_file.filename)
+    file_path , file_id = DataController().generate_filename(project_id=project_id , filename=uploaded_file.filename)
     
     try : 
         
@@ -48,7 +48,8 @@ async def upload_file(project_id : str , uploaded_file : UploadFile ,
     
     return JSONResponse(
         content = {
-            'content' : ResponseSignal.FILE_UPLOAD_SUCCESS.value
+            'content' : ResponseSignal.FILE_UPLOAD_SUCCESS.value , 
+            'file_id' : file_id
         }
     )
     
