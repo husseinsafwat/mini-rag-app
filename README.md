@@ -14,8 +14,6 @@ this is a minimal implementation of the rag model for question answering.
 
 ---
 
-
-
 1) Download a miniconda through this link from [here](https://www.anaconda.com/docs/getting-started/miniconda/main#quick-command-line-install)
 2) create a new environement using the following command
 
@@ -56,3 +54,8 @@ this is a minimal implementation of the rag model for question answering.
    ## Create a routes Folder contains all Project routes
 
    - create a base.py which contains the base routes for the project.
+
+   # create a Data route to enable uploading files to system
+
+   - allowed files is .txt , .pdf
+   - allowed size less than or equal 10MB

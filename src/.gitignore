@@ -2,10 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.venv
+.conda
 # C extensions
 *.so
-
+E:\amini rag app\mini-rag-app
 # Distribution / packaging
 .Python
 build/
